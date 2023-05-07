@@ -32,4 +32,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Vaadin ###
 /package-lock.json
+/frontend/generated/
+/vite.generated.ts
