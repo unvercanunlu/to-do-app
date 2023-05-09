@@ -6,7 +6,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://unver:12345@atlascluster.9qm6i8s.mongodb.net/?retryWrites=true&w=majority
+      uri: mongodb+srv://<username>:<password>@atlascluster.9qm6i8s.mongodb.net/?retryWrites=true&w=majority
       database: todo-app-db
 
 springdoc:
