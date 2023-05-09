@@ -9,7 +9,7 @@ public class ToDoNotFoundException extends RuntimeException {
     private final String id;
 
     public ToDoNotFoundException(String id) {
-        super(ErrorMessages.NOT_FOUND_TO_DO.replace("{id}", id));
+        super(ErrorMessages.NOT_FOUND_TODO.replace("{id}", id));
         this.id = id;
     }
 

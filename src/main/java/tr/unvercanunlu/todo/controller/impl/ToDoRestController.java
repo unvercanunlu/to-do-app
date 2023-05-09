@@ -58,8 +58,8 @@ public class ToDoRestController implements IToDoRestController {
     @PutMapping(path = "/{id}")
     public ResponseEntity<ToDo> updateToDo(
             @PathVariable(name = "id") String id,
-            @RequestParam(name = "text") String text,
-            @RequestParam(name = "done") Boolean done
+            @RequestParam(name = "text", defaultValue = "") String text,
+            @RequestParam(name = "done", defaultValue = "false") Boolean done
     ) {
         ToDo toDo = this.toDoService.updateToDo(id, text, done);
         return ResponseEntity.status(HttpStatus.OK.value())

@@ -31,7 +31,8 @@ public class ToDoService implements IToDoService {
         List<ToDo> toDos = this.toDoRepository.findAll();
 
         return toDos.stream()
-                .filter(toDo -> Objects.nonNull(toDo) && Objects.nonNull(toDo.getText()) && Objects.nonNull(toDo.getDone()))
+                .filter(Objects::nonNull)
+                .filter(toDo -> Objects.nonNull(toDo.getText()) && Objects.nonNull(toDo.getDone()))
                 .filter(toDo -> Objects.isNull(text) || toDo.getText().toLowerCase().trim().contains(text.trim().toLowerCase()))
                 .filter(toDo -> Objects.isNull(done) || toDo.getDone().equals(done))
                 .toList();

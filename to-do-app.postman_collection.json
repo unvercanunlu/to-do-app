@@ -1,0 +1,176 @@
+{
+  "info": {
+    "_postman_id": "7f779f55-969a-404c-9d42-3bfcae7b49e7",
+    "name": "ToDo App",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "788685"
+  },
+  "item": [
+    {
+      "name": "Search ToDo",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3500/api/v1/todos/search?text=do&done=false",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3500",
+          "path": [
+            "api",
+            "v1",
+            "todos",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "text",
+              "value": "do"
+            },
+            {
+              "key": "done",
+              "value": "false"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update ToDo",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3500/api/v1/todos/cd3eb9f2-b47b-4866-a898-f8d4f635fa77?text=do it&done=false",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3500",
+          "path": [
+            "api",
+            "v1",
+            "todos",
+            "cd3eb9f2-b47b-4866-a898-f8d4f635fa77"
+          ],
+          "query": [
+            {
+              "key": "text",
+              "value": "do it"
+            },
+            {
+              "key": "done",
+              "value": "false"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Retrieve ToDo",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3500/api/v1/todos/b95d3aba-de11-4dff-86dc-dc0d46ee2df8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3500",
+          "path": [
+            "api",
+            "v1",
+            "todos",
+            "b95d3aba-de11-4dff-86dc-dc0d46ee2df8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Check Exists ToDo",
+      "request": {
+        "method": "HEAD",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3500/api/v1/todos/b95d3aba-de11-4dff-86dc-dc0d46ee2df8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3500",
+          "path": [
+            "api",
+            "v1",
+            "todos",
+            "b95d3aba-de11-4dff-86dc-dc0d46ee2df8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete ToDo",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3500/api/v1/todos/b95d3aba-de11-4dff-86dc-dc0d46ee2df8",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3500",
+          "path": [
+            "api",
+            "v1",
+            "todos",
+            "b95d3aba-de11-4dff-86dc-dc0d46ee2df8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create ToDo",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "text",
+              "value": "do it",
+              "type": "text"
+            },
+            {
+              "key": "done",
+              "value": "false",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "http://localhost:3500/api/v1/todos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3500",
+          "path": [
+            "api",
+            "v1",
+            "todos"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
